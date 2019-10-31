@@ -1,0 +1,596 @@
+body {
+  padding-top: 4.4rem;
+  font-size: $font-size-sm;
+  font-family: "Open Sans";
+  line-height: 1.7em;
+}
+
+
+/************
+/* HEADERS
+/************/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5 {
+  font-family: "Raleway", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 1.4em;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+h2 {
+  color: $gray-800;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+section.container {
+  h2 {
+    color: $gray-500;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 12px 0;
+    text-transform: uppercase;
+  }
+}
+
+h3 {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 3.5px;
+  margin: 12px;
+  text-transform: uppercase;
+
+  &.widget-title {
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 .75rem;
+
+  }
+}
+
+h4 {
+  color: $gray-800;
+}
+
+h4 {
+  a {
+    color: $gray-700;
+  }
+}
+
+.bg-light {
+  background-color: $white !important;
+}
+
+nav.navbar {
+  box-shadow: 0 5px 10px 0 rgba(50,50,50,0.06);
+}
+
+button.navbar-toggler {
+  border: none;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+nav.navbar {
+  ul.navbar-nav {
+    li.menu-item,
+    li.nav-item {
+      color: #333;
+      font-family: "Raleway";
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+
+      a {
+        padding: 17px;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  color: #fff;
+  background-image: url("https://www.musicapristina.com/wp-content/uploads/sites/4/2019/07/jaz-sax.jpg");
+  background-position: right top;
+  background-size: cover;
+
+  h2 {
+    color: #fff;
+    font-size: 3.2vw;
+    text-transform: none;
+  }
+
+  p {
+    margin: 22px 0 38px;
+    font-size: 1.4rem;
+    @media only screen and (max-width: 768px) {
+      font-size: 1rem;
+    }
+  }
+  @media only screen and (min-width: 993px) {
+    height: 40vw;
+  }
+  @media only screen and (min-width: 769px) and (max-width: 992px) {
+    height: 50vw;
+  }
+  @media only screen and (max-width: 768px) {
+    background-image: url("https://www.musicapristina.com/wp-content/uploads/sites/4/2019/07/jaz-sax.jpg");
+    background-position: right top;
+    background-size: cover;
+    height: 70vw;
+
+    h2 {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    height: 90vw;
+
+    .container {
+      padding: 0 12px;
+    }
+
+    h2 {
+      font-size: 5vw;
+      line-height: 6.5vw;
+    }
+  }
+
+}
+
+.wrapper {
+  padding: 0;
+}
+
+section {
+  margin-top: 70px;
+}
+
+header {
+  &.entry-header {
+    padding: 30px 0;
+    border-top: 1px solid #e9e9e9;
+    background-color: #f8f9f9;
+    border-bottom: 1px solid #e9e9e9;
+    width: 100%;
+  }
+}
+
+blockquote {
+  background-color: #f8f9f9;
+  border-left: 4px solid $orange;
+  padding: 1rem 0 1rem 1.5rem;
+  margin-bottom: 2.5rem;
+
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-left: 0;
+  }
+}
+
+.entry-content {
+  padding: 2.5rem 0;
+}
+
+.breadcrumbs {
+  padding: 15px 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.right-area {
+  border-left: 1px solid #e9e9e9;
+  padding-top: 2.5rem;
+
+  .sticky-top {
+    top: 5rem;
+  }
+}
+
+.news-article {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e9e9e9;
+}
+
+.mp-post-list-item {
+  margin-bottom: 3rem;
+}
+
+.news-header {
+  h2 {
+    a {
+      color: $gray-800;
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-transform: none;
+    }
+  }
+}
+
+.news-meta {
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin-bottom: 10px;
+}
+
+.widget {
+  margin-bottom: 2rem;
+}
+
+footer {
+  color: $gray-400;
+  background-color: $black;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+
+  a {
+    color: $gray-400;
+  }
+
+  h5 {
+    color: $white;
+    font-size: 15px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  ul.menu {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    li.menu-item {
+      position: relative;
+      display: block;
+      padding-top: .75rem;
+      margin-bottom: -1px;
+
+      a {
+        color: $gray-400;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+
+  .footer-widgets {
+    padding: 72px 0;
+  }
+
+  .footer-widget {
+    margin-bottom: 3rem;
+  }
+
+  .footer-connect {
+    background-color: $gray-800;
+    padding: 72px 0;
+
+    h5 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .footer-social {
+    .footer-widget {
+      .custom-html-widget {
+        font-size: 3em;
+
+        a {
+          color: $white;
+
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .site-info {
+    background-color: $gray-700;
+    font-size: .85rem;
+    padding: 12px;
+    position: relative;
+  }
+
+  p {
+    position: relative;
+    z-index: 100;
+  }
+
+  .btt {
+    a {
+      border-radius: 0 20px 0 0;
+      color: #999999;
+      background: #222222;
+      display: block;
+      font-size: 30px;
+      height: 50px;
+      line-height: 50px;
+      margin: auto;
+      position: absolute;
+      right: 60px;
+      top: -25px;
+      -webkit-transition: all .2s linear 0s;
+      transition: all .2s linear 0s;
+      width: 50px;
+      z-index: 99;
+      transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+
+      &:hover {
+        color: $orange;
+      }
+
+      i {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        margin-left: 15px;
+      }
+    }
+  }
+}
+
+.grecaptcha-badge {
+  display: none;
+}
+
+/* Woo Commerce  */
+#woocommerce-wrapper {
+  margin-top: 1rem;
+}
+
+.woocommerce {
+  h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-left: 0;
+  }
+}
+
+/* END WOOCOMMERCE */
+
+[data-rellax-container],
+[data-rellax] {
+  width: 100%;
+  height: 100%;
+}
+
+[data-rellax] {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+[data-rellax-container] {
+  overflow: hidden;
+}
+
+[data-rellax-container] [data-rellax] {
+  transition: opacity .3s ease-out;
+  opacity: 0;
+}
+
+body [data-rellax-container] [data-rellax] {
+  opacity: 1;
+}
+
+.rellax-element.rellax-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header-content-wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.header-content {
+  text-align: center;
+}
+
+.content-wrap {
+  justify-content: flex-start;
+  align-content: center;
+  max-width: 44em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-button {
+  display: inline-block;
+  padding: .5em 1em;
+  border: 1px solid currentColor;
+  border-radius: .25em;
+  background: none;
+  font: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+.c-button + .c-button {
+  margin-left: .5em;
+}
+
+.c-button--primary {
+  background: white;
+  color: black;
+}
+
+[data-rellax] {
+  transform: translate3d(0,0,0);
+  will-change: transform;
+  background-color: #444;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.js-slider img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.color-dark {
+  color: #444;
+}
+
+.rellax-hidden {
+  opacity: 0;
+}
+
+[class*="c-bully"],
+[class*="c-bully"]:after,
+[class*="c-bully"]:before {
+  box-sizing: border-box;
+}
+
+.c-bully {
+  position: fixed;
+  top: 50%;
+  right: 48px;
+  font-size: 12px;
+  transform: translate(0, -50%);
+  z-index: 9000;
+  color: #000;
+  color: #888;
+}
+
+.c-bully--inversed {
+  color: #FFF;
+  color: #888;
+}
+
+.c-bully__bullet {
+  padding: .5em;
+  opacity: 0;
+
+  cursor: pointer;
+}
+
+.c-bully__bullet:after {
+  content: "";
+
+  display: block;
+  width: 1em;
+  height: 1em;
+
+  border: 2px solid currentColor;
+  border-radius: 50%;
+
+  will-change: transform;
+}
+
+.c-bully__bullet--active {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  transition: top .2s ease-out;
+}
+
+.c-bully__bullet--active:before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 14px;
+  transform: translate(-50%, -50%);
+  background: currentColor;
+  border-radius: 50%;
+}
+
+.c-bully__bullet--active:after {
+  border-color: transparent;
+}
+
+.c-bully__bullet--pop {
+  animation: bully-pop .6s cubic-bezier(0.485, 1.630, 0.430, 2) forwards, fade-in .2s .2s ease-out forwards;
+}
+
+.c-bully__bullet--squash {
+  opacity: 1;
+  animation: bully-squash .2s ease-out forwards;
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes bully-pop {
+  50% {
+    transform: scale(0.7);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes bully-squash {
+  50% {
+    transform: scale(0.6, 1.8);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#tpbr_topbar {
+  z-index: 100 !important;
+}
